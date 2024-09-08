@@ -20,7 +20,7 @@ public class DragDrop : MonoBehaviour
        // PuzzleManager.Sorting.BringToFront(tile.SpRenderer);
         Vector3 mousePos = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
         offset = transform.position - mousePos;
-        Debug.Log("Mousedown");
+       
     }
     private void OnMouseDrag()
     {
@@ -30,13 +30,13 @@ public class DragDrop : MonoBehaviour
             return;
         }
        
-        //transform.position = currPos;
+      
        
         Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f);
         Vector3 currPos = cam.ScreenToWorldPoint(mousePos) + offset;
         //tile.UpdatePosition(currPos);
         transform.position = currPos;
-       // Debug.Log("Mousedrag");
+      
     }
     private void OnMouseUp()
     {
@@ -46,10 +46,7 @@ public class DragDrop : MonoBehaviour
             return;
         }
         //tile.IsCorrectPositionNeighbours();
-        //if (tile.IsCorrectPosition())
-       // {
-       //     Debug.Log("Correct " + tile.TileID);
-       // }
+       
     }
     private void OnMouseOver()
     {

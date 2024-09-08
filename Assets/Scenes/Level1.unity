@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6795501716279873196, guid: 761509b9563620f428f6dc8541ff8024, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7065942263002160112, guid: 761509b9563620f428f6dc8541ff8024, type: 3}
       propertyPath: m_Name
@@ -259,7 +259,7 @@ PrefabInstance:
       addedObject: {fileID: 1245248269}
     - targetCorrespondingSourceObject: {fileID: 2446970473831476442, guid: 761509b9563620f428f6dc8541ff8024, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1245248270}
+      addedObject: {fileID: 1245248271}
   m_SourcePrefab: {fileID: 100100000, guid: 761509b9563620f428f6dc8541ff8024, type: 3}
 --- !u!1 &295930895
 GameObject:
@@ -750,7 +750,7 @@ PolygonCollider2D:
       - {x: 3.7099998, y: 0.5}
       - {x: 1.51, y: -1.81}
   m_UseDelaunayMesh: 0
---- !u!114 &1245248270
+--- !u!114 &1245248271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -759,9 +759,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1245248265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef88a4b451586494eb88bf9027fde62a, type: 3}
+  m_Script: {fileID: 11500000, guid: f25091cc946c4594488c7f318a56de0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1616432925}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: openLetter
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1544174450
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +881,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &1616432925 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6795501716279873196, guid: 761509b9563620f428f6dc8541ff8024, type: 3}
+  m_PrefabInstance: {fileID: 258376728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1731245874 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2978410933767591770, guid: e2eca1539a8fb2c49a05bd7eb37e9f57, type: 3}
