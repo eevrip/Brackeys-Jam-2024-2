@@ -6,10 +6,14 @@ public class ReadInput : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private string correctInput;
+    private Page page;
    
     int i = 0;
 
-    
+    private void Start()
+    {
+        page = GetComponent<Page>();
+    }
     public void PlaySound()
     {
         Debug.Log("Type " + i);
@@ -19,6 +23,9 @@ public class ReadInput : MonoBehaviour
     {
 
         if (input == correctInput)
-            Debug.Log("Correct Input");
+        {
+            Debug.Log("Correct");
+            page.SetSolved(true);
+        }
     }
 }

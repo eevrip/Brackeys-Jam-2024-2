@@ -7,9 +7,10 @@ public class Page : MonoBehaviour
     // Start is called before the first frame update
     private int pageNumber;
     private PageManager pageManager;
-    private bool isSolved = true;
-    private GameObject journal;
-    private GameObject puzzle;
+    private bool isSolved;
+    [SerializeField]private GameObject journal;
+    [SerializeField] private GameObject puzzle;
+    [SerializeField] private GameObject answer;
     [SerializeField] List<GameObject> externalObjects; 
     void Start()
     {
@@ -22,50 +23,59 @@ public class Page : MonoBehaviour
         if (isSolved)
         {
             pageManager.ActivatePage(pageNumber + 1);
-            pageManager.DeactivatePage(pageNumber);
+            //pageManager.DeactivatePage(pageNumber);
+            Deactivate();
         }
     }
     public void TurnPreviousPage()
-    {
+    { 
        pageManager.ActivatePage(pageNumber -1);
-      pageManager.DeactivatePage(pageNumber);
+        //pageManager.DeactivatePage(pageNumber);
+       Deactivate();
     }
-    private void Update()
-    {
-        if(!isSolved) { 
-            IsSolved();
-        }
-    }
+   
     public void IsSolved()
     {
         if (isSolved)
         {
-            puzzle.SetActive(false);
-            journal.SetActive(true);
+            // puzzle.SetActive(false);
+            //journal.SetActive(true);
+            SetActivityOfExternalItems(false);
+            answer.SetActive(true);
             
         }
+        else
+        {
+            SetActivityOfExternalItems(true);
+            answer.SetActive(false);
+        }
+        
+    }
+    public void SetSolved(bool isSolved)
+    {
+        this.isSolved = isSolved;
+       
+            IsSolved();
         
     }
     public void Deactivate()
     {
-        if (externalObjects != null)
-        {
-            foreach (GameObject obj in externalObjects)
-            {
-                obj.SetActive(false);
-            }
-        }
+        SetActivityOfExternalItems(false);
         gameObject.SetActive(false);
     }
     public void Activate()
+    {
+        IsSolved();
+        gameObject.SetActive(true);
+    }
+    public void SetActivityOfExternalItems(bool isActive)
     {
         if (externalObjects != null)
         {
             foreach (GameObject obj in externalObjects)
             {
-                obj.SetActive(true);
+                obj.SetActive(isActive);
             }
         }
-        gameObject.SetActive(true);
     }
 }

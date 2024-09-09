@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PageManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public static PageManager instance;
     [SerializeField] private GameObject closeButton;
-    //[SerializeField] private GameObject[] pages;
+    
     [SerializeField] private Page[] pages;
+    
     private static int currentPage = 0;
     private int totPages;
     public bool isBookOpen;
+    //create audio 
     void Awake()
     {
        
@@ -27,7 +29,7 @@ public class PageManager : MonoBehaviour
     void Start()
     {
         totPages = transform.childCount;
-       // pages = GetComponentsInChildren<Page>();
+      
         pages = new Page[totPages];
         for(int i = 0; i < pages.Length; i++)
         {
@@ -38,6 +40,7 @@ public class PageManager : MonoBehaviour
 
     public void ActivatePage(int page)
     {
+        PlaySound();
         if (page >= 0 && page < totPages)
         {
             currentPage = page;
@@ -67,8 +70,9 @@ public class PageManager : MonoBehaviour
         isBookOpen=false;
     }
     // Update is called once per frame
-    void Update()
+    public void PlaySound()
     {
-        
+        //randomize between the available sounds of turning page
+        //and play sound
     }
 }
