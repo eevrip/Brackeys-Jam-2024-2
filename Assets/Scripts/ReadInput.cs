@@ -6,8 +6,10 @@ public class ReadInput : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private string correctInput;
+   
     int i = 0;
 
+    
     public void PlaySound()
     {
         Debug.Log("Type " + i);

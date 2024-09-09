@@ -53,3 +53,6 @@ TagManager:
   - name: Fuzziness
     uniqueID: 2080274221
     locked: 0
+  - name: UI
+    uniqueID: 3615926509
+    locked: 0

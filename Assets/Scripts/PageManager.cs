@@ -7,9 +7,11 @@ public class PageManager : MonoBehaviour
     // Start is called before the first frame update
     public static PageManager instance;
     [SerializeField] private GameObject closeButton;
-    [SerializeField] private GameObject[] pages;
+    //[SerializeField] private GameObject[] pages;
+    [SerializeField] private Page[] pages;
     private static int currentPage = 0;
     private int totPages;
+    public bool isBookOpen;
     void Awake()
     {
        
@@ -25,10 +27,11 @@ public class PageManager : MonoBehaviour
     void Start()
     {
         totPages = transform.childCount;
-        pages = new GameObject[totPages];
+       // pages = GetComponentsInChildren<Page>();
+        pages = new Page[totPages];
         for(int i = 0; i < pages.Length; i++)
         {
-            pages[i] = transform.GetChild(i).gameObject;
+            pages[i] = transform.GetChild(i).gameObject.GetComponent<Page>();
         }
         
     }
@@ -38,14 +41,16 @@ public class PageManager : MonoBehaviour
         if (page >= 0 && page < totPages)
         {
             currentPage = page;
-            pages[currentPage].SetActive(true);
+            // pages[currentPage].SetActive(true);
+            pages[currentPage].Activate();
         }
     }
     public void DeactivatePage(int page)
     {
         if (page >= 0 && page < totPages)
         {
-            pages[page].SetActive(false);
+            // pages[page].SetActive(false);
+            pages[currentPage].Deactivate();
         }
     }
 
@@ -53,11 +58,13 @@ public class PageManager : MonoBehaviour
     {
         closeButton.SetActive(true);
         ActivatePage(currentPage);
+        isBookOpen = true;
     }
     public void CloseBook()
     {
         DeactivatePage(currentPage);
         closeButton.SetActive(false);
+        isBookOpen=false;
     }
     // Update is called once per frame
     void Update()
