@@ -30,20 +30,29 @@ AnimationClip:
       - serializedVersion: 3
         time: 1
         value: {x: -3.03, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0.20643973, y: 0, z: 0}
+        outSlope: {x: 0.20643973, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.17428507, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 2
+        value: {x: 3.33, y: 0, z: 0}
+        inSlope: {x: -1.8260194, y: 0, z: 0}
+        outSlope: {x: -1.8260194, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.15865315, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.8333334
+        time: 2.6666667
         value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        inSlope: {x: Infinity, y: 0, z: 0}
+        outSlope: {x: Infinity, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -58,6 +67,8 @@ AnimationClip:
       value: {fileID: 21300000, guid: 2f80dcecd04d95c49a8e0b031cb58286, type: 3}
     - time: 1
       value: {fileID: 21300000, guid: ab483236b59fbc04499afd556437f71e, type: 3}
+    - time: 2.6666667
+      value: {fileID: 21300000, guid: 1a6bbfa29b098a54bb86d22cba4d635e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -91,12 +102,13 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 21300000, guid: 2f80dcecd04d95c49a8e0b031cb58286, type: 3}
     - {fileID: 21300000, guid: ab483236b59fbc04499afd556437f71e, type: 3}
+    - {fileID: 21300000, guid: 1a6bbfa29b098a54bb86d22cba4d635e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.8333334
+    m_StopTime: 2.6833334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -128,20 +140,29 @@ AnimationClip:
       - serializedVersion: 3
         time: 1
         value: -3.03
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        inSlope: 0.20643973
+        outSlope: 0.20643973
+        tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
+        outWeight: 0.17428507
+      - serializedVersion: 3
+        time: 2
+        value: 3.33
+        inSlope: -1.8260194
+        outSlope: -1.8260194
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.15865315
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.8333334
+        time: 2.6666667
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
+        inWeight: 0
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -174,7 +195,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.8333334
+        time: 2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 2.6666667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -213,7 +243,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.8333334
+        time: 2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 2.6666667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -232,4 +271,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 2.6666667
+    functionName: OpenBook
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 2caf682aea8bf784c913a66e1833606f, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
