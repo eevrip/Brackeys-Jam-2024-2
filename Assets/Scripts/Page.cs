@@ -11,6 +11,7 @@ public class Page : MonoBehaviour
     [SerializeField]private GameObject journal;
     [SerializeField] private GameObject puzzle;
     [SerializeField] private GameObject answer;
+    [SerializeField] private GameObject fuzziness;
     [SerializeField] List<GameObject> externalObjects; 
     void Start()
     {

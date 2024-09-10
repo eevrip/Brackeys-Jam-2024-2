@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 363ac9689b1a1fb4e8568ba6fcebd2b4
+guid: e1aeeda580117e243bbb8cd7a3cb55d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,274 +97,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lavaCake
+      name: p1-1
       rect:
         serializedVersion: 2
-        x: 636
-        y: 741
-        width: 235
-        height: 236
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a145c6e25e7aebe4eb97ffc99a23dbfc
-      internalID: 1193647832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grid4
-      rect:
-        serializedVersion: 2
-        x: 999
-        y: 193
-        width: 337
-        height: 337
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2002ea6158940114792aeccc8a13e493
-      internalID: -251983460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grid3
-      rect:
-        serializedVersion: 2
-        x: 1354
-        y: 745
+        x: 309
+        y: 770
         width: 273
         height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0147c4ef1a11fb4c88526d87813b3be
-      internalID: 549805095
+      spriteID: e118fa3a466ca3b4e99c3de7c0dc9bd0
+      internalID: -95679848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grid3-2
+      name: p1-2
       rect:
         serializedVersion: 2
-        x: 1354
-        y: 460
+        x: 601
+        y: 770
         width: 273
         height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e2de66b15c456944bfe8e704401777e
-      internalID: 280302788
+      spriteID: e82dfe1d58dcd2b4f86245c5a0a56fc1
+      internalID: 1225336114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scribble1
+      name: p1-3
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 922
-        width: 89
-        height: 89
+        x: 1023
+        y: 771
+        width: 273
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 818705adae5c02d44b4162ac141e3927
-      internalID: 1135280839
+      spriteID: bc23e01e4be06af448306002d53977f0
+      internalID: 1203278114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scribble2
+      name: p1-4
       rect:
         serializedVersion: 2
-        x: 1212
-        y: 924
-        width: 94
-        height: 89
+        x: 1340
+        y: 770
+        width: 273
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acd31f70db930ec4ba411e697bf507a2
-      internalID: -786810033
+      spriteID: e741a6483c2b28541bcde2cde5fa5e27
+      internalID: 528979790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scribble3
+      name: p2-1
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 846
-        width: 78
-        height: 78
+        x: 328
+        y: 141
+        width: 273
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2da28fe1dcfaf849b5a30f1cefc98cc
-      internalID: -85397348
+      spriteID: db5978b46d97ca04ba80f2c55b92f691
+      internalID: -1068152515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scribble5
+      name: p2-2
       rect:
         serializedVersion: 2
-        x: 1215
-        y: 839
-        width: 85
-        height: 85
+        x: 646
+        y: 142
+        width: 273
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8dbd067099494c44b01c668adfdfee5
-      internalID: -1114535481
+      spriteID: 6962c2c32627e8249b0634d1140fd2c5
+      internalID: 217175856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scribble4
+      name: p2-3
       rect:
         serializedVersion: 2
-        x: 1128
-        y: 843
-        width: 84
-        height: 84
+        x: 1027
+        y: 141
+        width: 273
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 821d683f7e12c8248b5c3e9f16c27c31
-      internalID: -2133411138
+      spriteID: 823e421afb4c9db4a9d1089a9e0f7ade
+      internalID: -128229772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scribble6
+      name: p2-4
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 760
-        width: 84
-        height: 84
+        x: 1349
+        y: 140
+        width: 273
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea37a49a0c8dc7e47b0eee9acbb512f1
-      internalID: -1093228631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scribble7
-      rect:
-        serializedVersion: 2
-        x: 1130
-        y: 757
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 936a2e99a720e9e49aa8ffd94e669d67
-      internalID: -616722282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scribble8
-      rect:
-        serializedVersion: 2
-        x: 1214
-        y: 761
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32c4e5e0d189b8043b161ef142517ceb
-      internalID: 2104048137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: line
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 188
-        width: 24
-        height: 337
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f59f0f26f0c56164faa0fab1b2ffcbdb
-      internalID: 1472197516
+      spriteID: 61def075531c5b94aa984a67748239da
+      internalID: -8914810
       vertices: []
       indices: 
       edges: []
@@ -380,19 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      grid3: 549805095
-      grid3-2: 280302788
-      grid4: -251983460
-      lavaCake: 1193647832
-      line: 1472197516
-      scribble1: 1135280839
-      scribble2: -786810033
-      scribble3: -85397348
-      scribble4: -2133411138
-      scribble5: -1114535481
-      scribble6: -1093228631
-      scribble7: -616722282
-      scribble8: 2104048137
+      p1-1: -95679848
+      p1-2: 1225336114
+      p1-3: 1203278114
+      p1-4: 528979790
+      p2-1: -1068152515
+      p2-2: 217175856
+      p2-3: -128229772
+      p2-4: -8914810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
