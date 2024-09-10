@@ -9,6 +9,8 @@ public class Book : MonoBehaviour
     [SerializeField] private AudioClip pickUp;
     [SerializeField] private AudioClip putDown;
     [SerializeField] private AudioClip open;
+ 
+    [SerializeField] private AudioClip close;
     [SerializeField] private AudioSource sound;
     // Start is called before the first frame update
     void Start()
@@ -28,7 +30,7 @@ public class Book : MonoBehaviour
     }
     public void CloseBook()
     {
-        sound.clip = putDown;
+        sound.clip = close;
         sound.Play();
         pageManager.CloseBook();
         col.enabled = true;

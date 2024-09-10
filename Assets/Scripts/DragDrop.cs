@@ -8,7 +8,7 @@ public class DragDrop : MonoBehaviour
     private Camera cam;
     private Vector3 offset;
     //private PuzzlePiece tile;
-    
+    private SudokuTile tile;
     private void OnMouseDown()
     {
       
@@ -33,9 +33,16 @@ public class DragDrop : MonoBehaviour
       
        
         Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f);
-        Vector3 currPos = cam.ScreenToWorldPoint(mousePos) + offset;
-        //tile.UpdatePosition(currPos);
-        transform.position = currPos;
+        Vector3 currPos = cam.ScreenToWorldPoint(mousePos) + offset; 
+      
+        if (tile)
+        { if (!tile.IsComplete)
+            {  transform.position = currPos;
+                //tile.UpdatePosition(currPos);
+            }
+        }
+       
+       
       
     }
     private void OnMouseUp()
@@ -45,8 +52,18 @@ public class DragDrop : MonoBehaviour
         {
             return;
         }
+
+        if (tile)
+        {
+            if (!tile.IsComplete)
+            {
+
+                //tile.UpdatePosition(currPos);
+                tile.IsInPosition();
+            }
+        }
         //tile.IsCorrectPositionNeighbours();
-       
+
     }
     private void OnMouseOver()
     {
@@ -65,7 +82,7 @@ public class DragDrop : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-      //  tile = GetComponent<PuzzlePiece>();
+        tile = GetComponent<SudokuTile>();
 
     }
 

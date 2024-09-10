@@ -7,7 +7,7 @@ public class Page : MonoBehaviour
     // Start is called before the first frame update
     private int pageNumber;
     private PageManager pageManager;
-    private bool isSolved;
+    [SerializeField]private bool isSolved;
     [SerializeField]private GameObject journal;
     [SerializeField] private GameObject puzzle;
     [SerializeField] private GameObject answer;
