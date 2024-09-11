@@ -115,6 +115,20 @@ MonoBehaviour:
   - {fileID: -1093228631, guid: 363ac9689b1a1fb4e8568ba6fcebd2b4, type: 3}
   - {fileID: -616722282, guid: 363ac9689b1a1fb4e8568ba6fcebd2b4, type: 3}
   - {fileID: 2104048137, guid: 363ac9689b1a1fb4e8568ba6fcebd2b4, type: 3}
+  scribbleSounds:
+  - {fileID: 8300000, guid: c0e915d9c2d24ae4d8dd9cfeed5b5cc4, type: 3}
+  - {fileID: 8300000, guid: 37a427687052b6646a710e43d78a1ef8, type: 3}
+  - {fileID: 8300000, guid: adc346a3ffb38e4478ed868aaa074af9, type: 3}
+  - {fileID: 8300000, guid: 086ee086f6957484ebf3b0a5eb084b8d, type: 3}
+  - {fileID: 8300000, guid: b8c77d51e372b284aa956085134203ab, type: 3}
+  - {fileID: 8300000, guid: 110030aea3e08bb4c8008e63bb5a5bff, type: 3}
+  erasingSounds:
+  - {fileID: 8300000, guid: 522088ebc63c7fb439164a6be235b3fa, type: 3}
+  - {fileID: 8300000, guid: feae1af8a4f514f44ad564061769c138, type: 3}
+  - {fileID: 8300000, guid: 4a910ba050fab754d87a8c1ee670d4d3, type: 3}
+  solution: 000000000000000000
+  cells: []
+  manager: {fileID: 0}
 --- !u!1001 &1868303370587214612
 PrefabInstance:
   m_ObjectHideFlags: 0

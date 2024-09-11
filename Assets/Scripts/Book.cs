@@ -24,7 +24,7 @@ public class Book : MonoBehaviour
     public void OpenBook()
     {
         sound.clip = open;
-        sound.Play();
+      //  sound.Play();
         pageManager.OpenBook();
         col.enabled = false;
     }

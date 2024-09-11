@@ -30,12 +30,13 @@ public class SudokuManager : MonoBehaviour
         {
             if (!tile.IsCorrectPosition)
             {
-                Debug.Log("not correct " + tile);
+               // Debug.Log("not correct " + tile);
                 return;
             }
         }
         isComplete = true;
+        
         page.SetSolved(true);
-        Debug.Log("correct");
+       // Debug.Log("correct");
     }
 }

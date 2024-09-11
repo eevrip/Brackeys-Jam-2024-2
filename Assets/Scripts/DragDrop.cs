@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.VFX;
+
 public class DragDrop : MonoBehaviour
 {
    
@@ -9,6 +11,8 @@ public class DragDrop : MonoBehaviour
     private Vector3 offset;
     //private PuzzlePiece tile;
     private SudokuTile tile;
+    private SFXManager sfxManager;
+    [SerializeField] private List<AudioClip> movement;
     private void OnMouseDown()
     {
       
@@ -20,6 +24,7 @@ public class DragDrop : MonoBehaviour
        // PuzzleManager.Sorting.BringToFront(tile.SpRenderer);
         Vector3 mousePos = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
         offset = transform.position - mousePos;
+        PlaySound();
        
     }
     private void OnMouseDrag()
@@ -38,7 +43,7 @@ public class DragDrop : MonoBehaviour
         if (tile)
         { if (!tile.IsComplete)
             {  transform.position = currPos;
-                //tile.UpdatePosition(currPos);
+               
             }
         }
        
@@ -52,17 +57,17 @@ public class DragDrop : MonoBehaviour
         {
             return;
         }
-
+         PlaySound();
         if (tile)
         {
             if (!tile.IsComplete)
             {
 
-                //tile.UpdatePosition(currPos);
+               
                 tile.IsInPosition();
             }
         }
-        //tile.IsCorrectPositionNeighbours();
+       
 
     }
     private void OnMouseOver()
@@ -83,8 +88,14 @@ public class DragDrop : MonoBehaviour
     {
         cam = Camera.main;
         tile = GetComponent<SudokuTile>();
-
+        sfxManager = SFXManager.instance;
     }
 
-    
+    public void PlaySound()
+    {
+        int i = Random.Range(0, movement.Count);
+        AudioClip clip = movement[i];
+        sfxManager.PlaySoundClip(clip);
+
+    }
 }

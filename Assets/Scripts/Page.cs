@@ -1,27 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Page : MonoBehaviour
 {
     // Start is called before the first frame update
     private int pageNumber;
     private PageManager pageManager;
-    [SerializeField]private bool isSolved;
-    [SerializeField]private GameObject journal;
+    [SerializeField] private bool isSolved;
+    [SerializeField] private bool canTurnNextPage;
+    [SerializeField] private GameObject journal;
+    [SerializeField] private GameObject turnNextPage;
+    [SerializeField] private GameObject transitioning;
+
     [SerializeField] private GameObject puzzle;
+    [SerializeField] private GameObject interactivePuzzle;
     [SerializeField] private GameObject answer;
     [SerializeField] private GameObject fuzziness;
-    [SerializeField] List<GameObject> externalObjects; 
+    [SerializeField] List<GameObject> externalObjects;
     void Start()
     {
         pageNumber = transform.GetSiblingIndex();
         pageManager = PageManager.instance;
+
     }
 
     public void TurnNextPage()
     {
-        if (isSolved)
+        if (isSolved || canTurnNextPage)
         {
             pageManager.ActivatePage(pageNumber + 1);
             //pageManager.DeactivatePage(pageNumber);
@@ -29,35 +37,47 @@ public class Page : MonoBehaviour
         }
     }
     public void TurnPreviousPage()
-    { 
-       pageManager.ActivatePage(pageNumber -1);
+    {
+        pageManager.ActivatePage(pageNumber - 1);
         //pageManager.DeactivatePage(pageNumber);
-       Deactivate();
+        Deactivate();
     }
-   
+
     public void IsSolved()
     {
         if (isSolved)
         {
-            // puzzle.SetActive(false);
-            //journal.SetActive(true);
+             puzzle.SetActive(false);
+            journal.SetActive(true);
+            turnNextPage.SetActive(true);
             SetActivityOfExternalItems(false);
-            answer.SetActive(true);
-            
+            answer.SetActive(false);
+            fuzziness.SetActive(false);
+
         }
         else
         {
-            SetActivityOfExternalItems(true);
+            puzzle.SetActive(true);
+            journal.SetActive(false);
+            fuzziness.SetActive(true);
             answer.SetActive(false);
+            turnNextPage.SetActive(canTurnNextPage);
+            SetActivityOfExternalItems(true);
         }
-        
+
     }
+   
     public void SetSolved(bool isSolved)
     {
         this.isSolved = isSolved;
        
-            IsSolved();
+        if (isSolved)
+        { interactivePuzzle.SetActive(false);
+TransitionToJournal();
+        }
+            
         
+
     }
     public void Deactivate()
     {
@@ -66,8 +86,16 @@ public class Page : MonoBehaviour
     }
     public void Activate()
     {
-        IsSolved();
-        gameObject.SetActive(true);
+        if (canTurnNextPage && isSolved)
+        {
+            TurnPreviousPage();
+        }
+        else
+        {
+
+            IsSolved();
+            gameObject.SetActive(true);
+        }
     }
     public void SetActivityOfExternalItems(bool isActive)
     {
@@ -78,5 +106,88 @@ public class Page : MonoBehaviour
                 obj.SetActive(isActive);
             }
         }
+    } 
+    
+    public void TransitionToJournal()
+    {
+      
+        SetActivityOfExternalItems(false);
+        answer.SetActive(true);
+       
+        StartCoroutine(LoadJournal(3f));
+       
+
+    }
+    IEnumerator LoadJournal(float duration)
+    { 
+        StartCoroutine(FadeInOut(fuzziness, false, 2f));
+        yield return new WaitForSeconds(2f);
+      
+        fuzziness.SetActive(false);
+        StartCoroutine(FadeInOut(transitioning, true, 2f));
+        yield return new WaitForSeconds(duration);
+        answer.SetActive(false);
+        puzzle.SetActive(false);
+        journal.SetActive(true);
+        turnNextPage.SetActive(true);
+        StartCoroutine(FadeInOut(transitioning, false, 2f));
+        
+        yield return new WaitForSeconds(2f);
+        transitioning.SetActive(false);
+       
+    }
+    IEnumerator FadeInOut(GameObject obj, bool fadeIn, float duration)
+    {
+
+        float timer = 0;
+        float fadeFrom;
+        float fadeTo;
+        if (fadeIn)
+        {
+            
+            fadeFrom = 0f;
+            fadeTo = 1f;
+        }
+        else
+        {
+            fadeFrom = 1f;
+            fadeTo = 0f;
+        }
+
+        SpriteRenderer spr = obj.GetComponent<SpriteRenderer>();
+        TMP_Text text = obj.GetComponent<TMP_Text>();
+        if (spr != null)
+        {
+            Color currentColor = spr.color;
+            while (timer < duration)
+            {
+                timer += Time.deltaTime;
+                float alpha = Mathf.Lerp(fadeFrom, fadeTo, timer / duration);
+                spr.color = new Color(currentColor.r, currentColor.g, currentColor.b, alpha);
+                yield return null;
+            }
+
+
+        }
+        else if (text != null)
+        {
+            Color currentColor = text.color;
+            while (timer < duration)
+            {
+                timer += Time.deltaTime;
+                float alpha = Mathf.Lerp(fadeFrom, fadeTo, timer / duration);
+                text.color = new Color(currentColor.r, currentColor.g, currentColor.b, alpha);
+                yield return null;
+            }
+        }
+        else
+        {
+            yield break;
+        }
+
+
+
+
+
     }
 }

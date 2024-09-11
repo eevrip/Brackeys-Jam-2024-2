@@ -13,6 +13,8 @@ public class PageManager : MonoBehaviour
     private static int currentPage = 0;
     private int totPages;
     public bool isBookOpen;
+    private SFXManager sfxManager;
+    [SerializeField] private List<AudioClip> flippingPages;
     //create audio 
     void Awake()
     {
@@ -28,6 +30,7 @@ public class PageManager : MonoBehaviour
     }
     void Start()
     {
+        sfxManager = SFXManager.instance;
         totPages = transform.childCount;
       
         pages = new Page[totPages];
@@ -72,7 +75,9 @@ public class PageManager : MonoBehaviour
     // Update is called once per frame
     public void PlaySound()
     {
-        //randomize between the available sounds of turning page
-        //and play sound
+        int i = Random.Range(0, flippingPages.Count);
+      AudioClip clip = flippingPages[i];
+        sfxManager.PlaySoundClip(clip);
+
     }
 }
