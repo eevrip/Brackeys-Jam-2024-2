@@ -28,14 +28,14 @@ RectTransform:
   m_GameObject: {fileID: 496109142691494080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7475803835675848579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 770, y: 0}
+  m_AnchoredPosition: {x: 937, y: 0}
   m_SizeDelta: {x: 136.1, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3925766412577281271
@@ -91,6 +91,8 @@ MonoBehaviour:
   img1: {fileID: -1682685995, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
   img2: {fileID: -1019927192, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
   img3: {fileID: 1044517546, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
+  hoverClip: {fileID: 0}
+  pressedClip: {fileID: 0}
 --- !u!1 &719719668273794017
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +121,7 @@ RectTransform:
   m_GameObject: {fileID: 719719668273794017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
+  m_LocalScale: {x: 1.09, y: 1.09, z: 1.09}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2053581539635354106}
@@ -184,6 +186,8 @@ MonoBehaviour:
   img1: {fileID: 191135258, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
   img2: {fileID: 2019334198, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
   img3: {fileID: 0}
+  hoverClip: {fileID: 8300000, guid: d077d380c1770454dbfd9fea66b2edea, type: 3}
+  pressedClip: {fileID: 0}
 --- !u!1 &4023214037308942657
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +444,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -482,7 +486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 434, y: 0}
+  m_AnchoredPosition: {x: 515, y: 0}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5218474106276552578
@@ -529,10 +533,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 6496350062948121883}
   m_HandleRect: {fileID: 1422940533183768327}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -569,6 +573,18 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: TextAnimation, Assembly-CSharp
           m_MethodName: SetImage
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 3161018377003915514}
+          m_TargetAssemblyTypeName: TextAnimation, Assembly-CSharp
+          m_MethodName: PlayHoverSound
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

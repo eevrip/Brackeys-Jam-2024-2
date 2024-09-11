@@ -9,11 +9,15 @@ public class TextAnimation : MonoBehaviour
     [SerializeField] private Sprite img1;
     [SerializeField] private Sprite img2;
     [SerializeField] private Sprite img3;
+    [SerializeField] private AudioClip hoverClip;
+    [SerializeField] private AudioClip pressedClip;
+    private SFXManager sfxManager;
     private Image currentImg;
 
     public void Start()
     {
         currentImg = GetComponent<Image>();
+        sfxManager = SFXManager.instance;
     }
    
     public void SetImage(bool tilted)
@@ -29,15 +33,26 @@ public class TextAnimation : MonoBehaviour
     {
         if(num <= 0.25)
         {
-            currentImg.sprite = img1;
+            if(img1 != null) 
+                currentImg.sprite = img1;
         }
         else if(num >=0.75) 
         {
-             currentImg.sprite=img3;
+            if (img3 != null)
+                currentImg.sprite=img3;
         }
         else
         {
-            currentImg.sprite = img2;
+            if (img2 != null)
+                currentImg.sprite = img2;
         }
+    }
+    public void PlayHoverSound()
+    {
+        sfxManager.PlaySoundClip(hoverClip);
+    }
+    public void PlayClickSound()
+    {
+        sfxManager.PlaySoundClip(pressedClip);
     }
 }
