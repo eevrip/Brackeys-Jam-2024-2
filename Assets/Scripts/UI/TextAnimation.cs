@@ -49,7 +49,7 @@ public class TextAnimation : MonoBehaviour
     }
     public void PlayHoverSound()
     {
-        sfxManager.PlaySoundClip(hoverClip);
+        sfxManager.PlaySoundClipVol(hoverClip,0.3f);
     }
     public void PlayClickSound()
     {

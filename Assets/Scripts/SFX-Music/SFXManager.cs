@@ -23,6 +23,13 @@ public class SFXManager : MonoBehaviour
     public void PlaySoundClip(AudioClip clip)
     {
         audioSource.clip = clip;
+        audioSource.volume = 1f;
+        audioSource.Play();
+    }
+    public void PlaySoundClipVol(AudioClip clip, float volume)
+    {
+        audioSource.clip = clip;
+        audioSource.volume = volume;
         audioSource.Play();
     }
 }

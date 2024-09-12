@@ -106,7 +106,7 @@ public class DragDrop : MonoBehaviour
     {
         int i = Random.Range(0, movement.Count);
         AudioClip clip = movement[i];
-        sfxManager.PlaySoundClip(clip);
+        sfxManager.PlaySoundClipVol(clip,0.5f);
 
     }
 }
