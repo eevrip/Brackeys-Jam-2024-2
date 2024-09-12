@@ -341,21 +341,29 @@ PrefabInstance:
       value: Background
       objectReference: {fileID: 0}
     - target: {fileID: 1422940533183768327, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422940533183768327, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422940533183768327, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230134977719941528, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 164503402, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
+      objectReference: {fileID: -1922408023, guid: 516e3d12605b18941bb6d112c9bdbbfd, type: 3}
     - target: {fileID: 3161018377003915514, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: img1
       value: 
-      objectReference: {fileID: 164503402, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
+      objectReference: {fileID: -1922408023, guid: 516e3d12605b18941bb6d112c9bdbbfd, type: 3}
     - target: {fileID: 3161018377003915514, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: img2
       value: 
-      objectReference: {fileID: 1046585541, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
+      objectReference: {fileID: 2096471974, guid: 516e3d12605b18941bb6d112c9bdbbfd, type: 3}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -418,11 +426,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7475803835675848579, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 166
+      value: 305
       objectReference: {fileID: 0}
     - target: {fileID: 7475803835675848579, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 85.1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7475803835675848579, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_LocalScale.x
