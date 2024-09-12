@@ -11,6 +11,7 @@ public class DragDrop : MonoBehaviour
     private Vector3 offset;
     //private PuzzlePiece tile;
     private SudokuTile tile;
+    private KitchenItem item;
     private SFXManager sfxManager;
     [SerializeField] private List<AudioClip> movement;
     private void OnMouseDown()
@@ -46,6 +47,11 @@ public class DragDrop : MonoBehaviour
                
             }
         }
+        if (item)
+        {
+            if(!item.IsComplete)
+                transform.position = currPos;
+        }
        
        
       
@@ -67,7 +73,11 @@ public class DragDrop : MonoBehaviour
                 tile.IsInPosition();
             }
         }
-       
+        if (item)
+        {
+            if (!item.IsComplete)
+                item.IsInPosition();
+        }
 
     }
     private void OnMouseOver()
@@ -88,6 +98,7 @@ public class DragDrop : MonoBehaviour
     {
         cam = Camera.main;
         tile = GetComponent<SudokuTile>();
+        item = GetComponent<KitchenItem>();
         sfxManager = SFXManager.instance;
     }
 
