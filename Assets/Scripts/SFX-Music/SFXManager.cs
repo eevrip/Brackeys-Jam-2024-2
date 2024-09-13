@@ -5,7 +5,7 @@ using UnityEngine;
 public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance;
-    private AudioSource audioSource;
+    [SerializeField]private AudioSource[] audioSource = new AudioSource[3];
     void Awake()
     {
 
@@ -17,19 +17,38 @@ public class SFXManager : MonoBehaviour
         {
             instance = this;
         }
-        audioSource = GetComponent<AudioSource>();
+       
+        audioSource = GetComponentsInChildren<AudioSource>();
     }
 
     public void PlaySoundClip(AudioClip clip)
     {
-        audioSource.clip = clip;
-        audioSource.volume = 1f;
-        audioSource.Play();
+        audioSource[0].clip = clip;
+        audioSource[0].volume = 1f;
+        audioSource[0].Play();
     }
     public void PlaySoundClipVol(AudioClip clip, float volume)
     {
-        audioSource.clip = clip;
-        audioSource.volume = volume;
-        audioSource.Play();
+        audioSource[2].clip = clip;
+        audioSource[2].volume = 1f;
+        audioSource[2].Play();
+    }
+    public void PlaySoundClipLowVol(AudioClip clip, float volume)
+    {
+        audioSource[2].clip = clip;
+        audioSource[2].volume = volume;
+        audioSource[2].Play();
+    }
+    public void PlaySoundClipLoud(AudioClip clip)
+    {
+        audioSource[1].clip = clip;
+        audioSource[1].volume = 1f;
+        audioSource[1].Play();
+    }
+    public void PlaySoundClipLoudVol(AudioClip clip, float volume)
+    {
+        audioSource[1].clip = clip;
+        audioSource[1].volume = volume;
+        audioSource[1].Play();
     }
 }

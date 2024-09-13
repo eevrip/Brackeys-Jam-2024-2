@@ -82,7 +82,7 @@ public class MenuManager : MonoBehaviour
         if(transitionLevel)
             transitionLevel.SetTrigger("LoadNext");
        
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(levelIndx);
     }
     

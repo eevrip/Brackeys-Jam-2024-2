@@ -187,7 +187,7 @@ MonoBehaviour:
   img2: {fileID: 2019334198, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
   img3: {fileID: 0}
   hoverClip: {fileID: 8300000, guid: d077d380c1770454dbfd9fea66b2edea, type: 3}
-  pressedClip: {fileID: 0}
+  pressedClip: {fileID: 8300000, guid: 0fb8d63e28adeb140b389e4a50d0f23e, type: 3}
 --- !u!1 &4023214037308942657
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +601,22 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: TextAnimation, Assembly-CSharp
           m_MethodName: SetImage
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3161018377003915514}
+          m_TargetAssemblyTypeName: TextAnimation, Assembly-CSharp
+          m_MethodName: PlayClickSound
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

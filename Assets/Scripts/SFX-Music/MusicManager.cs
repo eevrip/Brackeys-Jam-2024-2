@@ -25,4 +25,22 @@ public class MusicManager : MonoBehaviour
         audioSource.clip = clip;
         audioSource.Play();
     }
+    public void StopSoundClip()
+    {
+
+        StartCoroutine(StartFadeSound(10f, 0f));
+    }
+    public IEnumerator StartFadeSound(float duration, float targetVolume)
+    {
+        float currentTime = 0;
+        float start = audioSource.volume;
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
+    }
+
 }

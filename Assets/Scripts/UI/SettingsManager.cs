@@ -29,7 +29,7 @@ public class SettingsManager : MonoBehaviour
     public void SetSFXVolume(float volume)
     {
        sfxVolume = volume;
-        audioMixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20f + 10f);
+        audioMixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20f);
     }
     public void SetBackgroundVolume(float volume)
     {

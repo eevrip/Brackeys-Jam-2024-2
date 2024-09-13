@@ -11,7 +11,7 @@ public class KitchenManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        items = new KitchenItem[9];
+        items = new KitchenItem[10];
         for (int i = 0; i < items.Length; i++)
         {
             items[i] = transform.GetChild(i).gameObject.GetComponent<KitchenItem>();

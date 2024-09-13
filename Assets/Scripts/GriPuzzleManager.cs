@@ -6,6 +6,7 @@ public class GriPuzzleManager : MonoBehaviour
 {
     [SerializeField] private GridPuzzle[] grids;
     [SerializeField] private Page page;
+    [SerializeField] private Page pagePrevious;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +28,12 @@ public class GriPuzzleManager : MonoBehaviour
         {
             if (!puzzle.IsSolved)
             {
-                Debug.Log("not correct");
+               // Debug.Log("not correct");
                 return;
             }
         }
         page.SetSolved(true);
-        Debug.Log("correct");
+        pagePrevious.SetSolved(true);
+        //Debug.Log("correct");
     }
 }

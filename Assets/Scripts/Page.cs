@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
+using Unity.Audio;
 
 public class Page : MonoBehaviour
 {
@@ -19,11 +19,14 @@ public class Page : MonoBehaviour
     [SerializeField] private GameObject interactivePuzzle;
     [SerializeField] private GameObject answer;
     [SerializeField] private GameObject fuzziness;
+    [SerializeField] private AudioClip accomplishClip;
     [SerializeField] List<GameObject> externalObjects;
+    private SFXManager sfxManager;
     void Start()
     {
         pageNumber = transform.GetSiblingIndex();
         pageManager = PageManager.instance;
+        sfxManager = SFXManager.instance;
 
     }
 
@@ -47,7 +50,7 @@ public class Page : MonoBehaviour
     {
         if (isSolved)
         {
-             puzzle.SetActive(false);
+            puzzle.SetActive(false);
             journal.SetActive(true);
             turnNextPage.SetActive(true);
             SetActivityOfExternalItems(false);
@@ -66,19 +69,20 @@ public class Page : MonoBehaviour
         }
 
     }
-   
+
     public void SetSolved(bool isSolved)
     {
         this.isSolved = isSolved;
-       
-        if (isSolved)
-        { interactivePuzzle.SetActive(false);
-TransitionToJournal();
+
+        if (isSolved && !canTurnNextPage)
+        {
+            interactivePuzzle.SetActive(false);
+            TransitionToJournal();
         }
-            
-        
 
     }
+   
+
     public void Deactivate()
     {
         SetActivityOfExternalItems(false);
@@ -88,7 +92,13 @@ TransitionToJournal();
     {
         if (canTurnNextPage && isSolved)
         {
-            TurnPreviousPage();
+           
+            if (pageManager.CurrentPage() > pageNumber)
+            {
+                TurnPreviousPage();
+            }
+            else
+                TurnNextPage();
         }
         else
         {
@@ -106,23 +116,23 @@ TransitionToJournal();
                 obj.SetActive(isActive);
             }
         }
-    } 
-    
+    }
+
     public void TransitionToJournal()
     {
-      
+
         SetActivityOfExternalItems(false);
         answer.SetActive(true);
-       
+        sfxManager.PlaySoundClipLowVol(accomplishClip, 0.09f);
         StartCoroutine(LoadJournal(3f));
-       
+
 
     }
     IEnumerator LoadJournal(float duration)
-    { 
+    {
         StartCoroutine(FadeInOut(fuzziness, false, 2f));
-        yield return new WaitForSeconds(2f);
-      
+        yield return new WaitForSeconds(4f);
+        //MusicManager.instance.StopSoundClip();
         fuzziness.SetActive(false);
         StartCoroutine(FadeInOut(transitioning, true, 2f));
         yield return new WaitForSeconds(duration);
@@ -130,11 +140,12 @@ TransitionToJournal();
         puzzle.SetActive(false);
         journal.SetActive(true);
         turnNextPage.SetActive(true);
+
         StartCoroutine(FadeInOut(transitioning, false, 2f));
-        
+
         yield return new WaitForSeconds(2f);
         transitioning.SetActive(false);
-       
+
     }
     IEnumerator FadeInOut(GameObject obj, bool fadeIn, float duration)
     {
@@ -144,7 +155,7 @@ TransitionToJournal();
         float fadeTo;
         if (fadeIn)
         {
-            
+
             fadeFrom = 0f;
             fadeTo = 1f;
         }

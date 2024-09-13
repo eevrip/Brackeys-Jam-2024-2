@@ -11,6 +11,7 @@ public class PageManager : MonoBehaviour
     [SerializeField] private Page[] pages;
     
     private static int currentPage = 0;
+    
     private int totPages;
     public bool isBookOpen;
     private SFXManager sfxManager;
@@ -46,9 +47,10 @@ public class PageManager : MonoBehaviour
         PlaySound();
         if (page >= 0 && page < totPages)
         {
-            currentPage = page;
+            
             // pages[currentPage].SetActive(true);
-            pages[currentPage].Activate();
+            pages[page].Activate();
+            currentPage = page;
         }
     }
     public void DeactivatePage(int page)
@@ -77,7 +79,8 @@ public class PageManager : MonoBehaviour
     {
         int i = Random.Range(0, flippingPages.Count);
       AudioClip clip = flippingPages[i];
-        sfxManager.PlaySoundClip(clip);
+        sfxManager.PlaySoundClipLoud(clip);
 
     }
+    public int CurrentPage() { return currentPage; }
 }

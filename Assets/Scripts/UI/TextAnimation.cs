@@ -13,11 +13,13 @@ public class TextAnimation : MonoBehaviour
     [SerializeField] private AudioClip pressedClip;
     private SFXManager sfxManager;
     private Image currentImg;
+    [SerializeField]private Slider slider;
 
     public void Start()
     {
         currentImg = GetComponent<Image>();
         sfxManager = SFXManager.instance;
+        
     }
    
     public void SetImage(bool tilted)
@@ -31,12 +33,12 @@ public class TextAnimation : MonoBehaviour
     }
     public void SetImageTriple(float num) 
     {
-        if(num <= 0.25)
+        if(num <= 0.25*slider.maxValue)
         {
             if(img1 != null) 
                 currentImg.sprite = img1;
         }
-        else if(num >=0.75) 
+        else if(num >=0.75 * slider.maxValue) 
         {
             if (img3 != null)
                 currentImg.sprite=img3;

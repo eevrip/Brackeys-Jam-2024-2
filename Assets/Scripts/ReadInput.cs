@@ -27,10 +27,11 @@ public class ReadInput : MonoBehaviour
     public void GetInput(string input)
     {
 
-        if (input == correctInput)
+        if (input.ToLower() == correctInput)
         {
             Debug.Log("Correct");
             page.SetSolved(true);
         }
     }
+   
 }
