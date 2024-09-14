@@ -81,8 +81,12 @@ public class MenuManager : MonoBehaviour
        
         if(transitionLevel)
             transitionLevel.SetTrigger("LoadNext");
-       
+       if(levelIndx == 1)
+        {
+            AmbientManager.instance.SetVolumeRain(0.34f);
+        }
         yield return new WaitForSeconds(3f);
+        
         SceneManager.LoadScene(levelIndx);
     }
     

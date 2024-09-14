@@ -33,7 +33,7 @@ public class TextAnimation : MonoBehaviour
     }
     public void SetImageTriple(float num) 
     {
-        if(num <= 0.25*slider.maxValue)
+      /*  if(num <= 0.25*slider.maxValue)
         {
             if(img1 != null) 
                 currentImg.sprite = img1;
@@ -47,7 +47,7 @@ public class TextAnimation : MonoBehaviour
         {
             if (img2 != null)
                 currentImg.sprite = img2;
-        }
+        }*/
     }
     public void PlayHoverSound()
     {

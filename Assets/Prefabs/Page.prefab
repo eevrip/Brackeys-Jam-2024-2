@@ -1183,15 +1183,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Day 1\n\nToday I decided to bake lava cakes. I baked them multiple times,
-    Everybody loves them. The secret is using a nice quality of chocolate. I like
-    serving them with a vanilla ice cream. It is so good! \n\nThis time around though
-    I got confused..? I thought I have already mixed the first mixture with the second,
-    but alas I haven't. I poured the first mixture into the containers and baked
-    them. Well, basically they came out as lava. Don't get me wrong, they were tasty,
-    but I missed the cake part. Serena told me not to let this thing to affect me.
-    It was just confusing. It was like I lost the track of time? Hopefully tomorrow
-    my day will be better."
+  m_text: "Day 27\r\n\r\nToday I decided to bake lava cakes. I baked them multiple
+    times, Everybody loves them. The secret is using a nice quality of chocolate.
+    I like serving them with a scoop of vanilla ice cream. It is so good! \r\n\r\nThis
+    time around though I got confused..? I thought I had already mixed the first
+    mixture with the second one, but alas I haven't. I poured the first mixture into
+    the containers and baked them. Well, basically they came out as lava. Don't get
+    me wrong, they were tasty, but I missed the cake part. Serena told me not to
+    let this thing affect me. It was confusing. Hopefully tomorrow my day will be
+    better.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 57690907ebc9bda4fbaf404852c9f233, type: 2}
   m_sharedMaterial: {fileID: 7391442945868131023, guid: 57690907ebc9bda4fbaf404852c9f233, type: 2}
@@ -1236,8 +1236,8 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 5
-  m_linkedTextComponent: {fileID: 0}
+  m_overflowMode: 6
+  m_linkedTextComponent: {fileID: 8841715526909269586}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
@@ -3188,7 +3188,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 5
+  m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -3206,7 +3206,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 2
-  m_margin: {x: 3.907691, y: -1.8235893, z: 10.439545, w: -1.1011572}
+  m_margin: {x: 3.907691, y: -1.8235893, z: 10.570482, w: -1.1011572}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

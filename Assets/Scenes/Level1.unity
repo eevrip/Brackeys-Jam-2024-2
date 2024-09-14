@@ -214,6 +214,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 860213869}
     m_Modifications:
+    - target: {fileID: 544328187520983162, guid: 2958e18cc4483b34f977d2fb15ab7b9a, type: 3}
+      propertyPath: m_text
+      value: "Day 0\r\n\r\nI have to read this every single day... and I also have
+        to keep it up to date. Otherwise, the situation might get worse. \r\n\r\nI
+        have to be strong. I can do this! \r\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 629242490252949641, guid: 2958e18cc4483b34f977d2fb15ab7b9a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -772,6 +778,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7929740986225162401, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
   m_PrefabInstance: {fileID: 1452778366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &95689115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7235744645489396401, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+  m_PrefabInstance: {fileID: 4751780080810876188}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &111166399
 GameObject:
@@ -2903,9 +2914,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "My Journal\n\nDay 0\n\nI have to read this every single day... and I also
-    have to keep it up to date. Otherwise, the situation might get worse. \n\nI have
-    to be strong. I can do this..."
+  m_text: "My Journal\n\nDay 0\n\nI have to read this journal every single day...
+    and I also have to keep it up to date. I think it will be helpful for my situation.
+    \n\nI have to be strong. I can do this!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 57690907ebc9bda4fbaf404852c9f233, type: 2}
   m_sharedMaterial: {fileID: 7391442945868131023, guid: 57690907ebc9bda4fbaf404852c9f233, type: 2}
@@ -4048,80 +4059,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
---- !u!1 &777354604 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2902897001737620613, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-  m_PrefabInstance: {fileID: 7615002711198168578}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &777354606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777354604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f25091cc946c4594488c7f318a56de0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 777354604}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2142521701}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 777354610}
-        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0.4
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!4 &777354608 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-  m_PrefabInstance: {fileID: 7615002711198168578}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &777354610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777354604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa766297bcb142c40811b1d736cf7503, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 7871cccfc5df7d94881f31ec2f495575, type: 3}
 --- !u!114 &788390767 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 113185666531328982, guid: d7aa51575bed1664a903fd9c668a4b62, type: 3}
@@ -4284,7 +4221,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 777354604}
+      - m_Target: {fileID: 95689115}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -4782,7 +4719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.29, y: -1.41}
+  m_AnchoredPosition: {x: 10.92, y: -1.41}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!210 &915369583
@@ -4880,7 +4817,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 14.044113, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -6104,6 +6041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grain
       objectReference: {fileID: 0}
+    - target: {fileID: 7807756442572574454, guid: 8c93256d5081dd04ca12d85bf54f0062, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8341847723483983340, guid: 8c93256d5081dd04ca12d85bf54f0062, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6794,6 +6735,11 @@ Transform:
   - {fileID: 224999184}
   m_Father: {fileID: 1650405260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1355453492 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+  m_PrefabInstance: {fileID: 4751780080810876188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1408321474
 GameObject:
   m_ObjectHideFlags: 0
@@ -6912,6 +6858,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 860213869}
     m_Modifications:
     - target: {fileID: 500738163651035536, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: isLastPage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 500738163651035536, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: externalObjects.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6953,17 +6903,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_text
-      value: 'Day 124
+      value: 'Day 232
 
 
-        Some days I wake up and I don''t know who I am. I
-        don''t remember. I have to remind myself that my name is Ninemia Nevihta.
-        I am a scientist. Well, I was. I studied cosmology and astrophysics. Before
-        my situation got worse I was working on black holes. Now I am home trying
-        to enjoy every moment with my family. Serena, my wife, and our two cats Pumpkin
-        and Joob. It''s very scary that they will be days that I won''t remember
-        my life with them, because they are my world. I am afraid that they will
-        become strangers one day.. I am very afraid...'
+
+        Some days I wake up and I don''t know who I am.
+        I don''t remember. I have to remind myself that my name is Ninemia Nevihta.
+        I am a doctor. Well I was. Before my condition got worse I was doing research
+        in cancer detection. Now I am home trying to enjoy every moment with my family.
+        Serena, my wife, and our two cats Pumpkin and Joob. I have to show them all
+        the love I have for them right now. It''s very scary that there will be days
+        that I won''t remember my life with them... I am afraid that they will become
+        strangers to me one day.
+
+
+
+        I am very afraid...
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 2672325403290872249, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: correctPositions.Array.data[0]
@@ -7209,15 +7166,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6320745437008545016, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1912795956}
-    - targetCorrespondingSourceObject: {fileID: 3099789547043262283, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6510864584303481332, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4913167341434302958, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
 --- !u!4 &1452778367 stripped
 Transform:
@@ -7414,8 +7362,8 @@ RectTransform:
   - {fileID: 956776696}
   - {fileID: 363879105}
   - {fileID: 2019963740}
-  - {fileID: 2142521702}
   - {fileID: 1992200678}
+  - {fileID: 1355453492}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7745,6 +7693,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 860213869}
     m_Modifications:
+    - target: {fileID: 500738163651035536, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: isLastPage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 711101536794541623, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: correctPositions.Array.data[0]
       value: 
@@ -7779,20 +7731,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_text
-      value: 'Day 79
-
-
-        Today I had to run some errands in town. I was kinda
-        scared to do it alone. It''''s been a while since I run through town by myself,
-        but I had to.
-
-        My errands was to go to the post to get some stuff
-        we ordered, then go to the gym, because I have to keep exercising and then
-        run by the supermarket. I thought it went well, but while I was leaving the
-        supermarket and went to store the items in the car, I was suprised to see
-        the trunk was full of the same items I just bought... It seems that I went
-        to the supermarket two times for the day. I went home defeated.. I am starting
-        to get scared. Is this what my life is going to be? and probably worse...'
+      value: "Day 154\r\n\r\nToday I had to run some errands in town. I was kinda
+        scared to do it alone. It's been a while since I ran through town by myself.\r\nMy
+        errands were to go to the post office to get some stuff we ordered, then
+        go to the gym, because I have to keep exercising and then run by the supermarket.
+        I think it went well, but while I was leaving the supermarket I think I lost
+        my way and ended up back at the supermarket. This is the first time that
+        this has happened. I ended up using gps to go back home which is frustrating.
+        This is the town I grew up with and I know every corner of it. I didn\u2019t
+        expect to use gps for just going to my local supermarket. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_wordSpacing
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2672325403290872249, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: correctPositions.Array.data[0]
@@ -7936,22 +7887,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_text
-      value: 'Day 79
-
-
-        Today I had to run some errands in town. I was kinda
-        scared to do it alone. It''''s been a while since I run through town by myself,
-        but I had to.
-
-        My errands were to go to the post to get some stuff
-        we ordered, then go to the gym, because I have to keep exercising and then
-        run by the supermarket. I think it went well, but while I was leaving the
-        supermarket and went to store the items I bought in the car, I was suprised
-        to see that the trunk was full of items I just bought... It seems that I
-        went to the supermarket two times for the day. I went home defeated.. I am
-        starting to get scared. Is this what my life is going to be? and probably
-        worse...'
+      value: "Day 154\r\n\r\nToday I had to run some errands in town. I was kinda
+        scared to do it alone. It's been a while since I ran through town by myself.\r\nMy
+        errands were to go to the post to get some stuff we ordered, then go to the
+        gym, because I have to keep exercising and then run by the supermarket. I
+        think it went well, but while I was leaving the supermarket I think I lost
+        my way and ended up back at the supermarket. This is the first time that
+        this has happened. I ended up using gps to go back home which is frustrating
+        since this is the town I grew up with and I know every corner of it. I didn\u2019t
+        expect to use gps for just going to my local supermarket. \r\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_wordSpacing
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: parentLinkedComponent
+      value: 
+      objectReference: {fileID: 1650405261}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4913167341434302958, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
@@ -7995,12 +7948,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1333709155}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3099789547043262283, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6510864584303481332, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 1908525998282286406, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1451155308}
@@ -8015,6 +7962,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2849558159645065254, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
   m_PrefabInstance: {fileID: 1650405258}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1650405261 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+  m_PrefabInstance: {fileID: 1650405258}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1650405262 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 500738163651035536, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
@@ -10421,7 +10379,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 62344836}
-  - {fileID: 777354608}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1990325840
@@ -10597,6 +10554,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 6.67
       objectReference: {fileID: 0}
+    - target: {fileID: 46499590614588386, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.47
+      objectReference: {fileID: 0}
     - target: {fileID: 74589514793742064, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_Color.b
       value: 0.08235294
@@ -10727,24 +10688,19 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 253ea52233240074aa67a76d3e423e7d, type: 3}
     - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_text
-      value: 'Day 46
-
-
-        I always loved gardening. Since I was a little kid,
-        every spring my mum and I planted flowers and other plants in the backyard.
-        My favorites where lillies. I cannot grow lillies anymore. They are dangerous
-        for cats. It''s a trade I am okay with. I will do anything for my babies.
-
-
-        Anyway,
+      value: "Day 61\r\n\r\nI always loved gardening. Since I was a little kid, every
+        spring my mum and I planted flowers and other plants in the backyard. My
+        favourites were lilies. I cannot grow lilies anymore. They are dangerous
+        for cats. It's a trade off I am happy with. I will do anything for them.\r\n\r\nAnyway,
         the past month we planted basil, since we love cooking. And basil needs a
         lot of watering and trimming in order to grow. I noticed though that its
-        leaves started browning. I thought I water it with the right amount of water
-        everyday. I asked Serena if she watered it as well, maybe we both did? Well
-        Serena doesn''t know anything about gardening, so that was a question I didn''t
-        expect to ask. She told me that she saw me watering it three times just today.
-        I was shocked and kinda sad...  I think is time to write down what I did
-        to the plants for the day. I don''t want to but...'
+        leaves started browning. I thought I was watering it with the right amount
+        of water everyday. I asked Serena if she watered it as well, maybe we both
+        did? Well, Serena doesn't know anything about gardening, so that was a question
+        I didn't expect to ask. She told me that she saw me watering it three times
+        just today. I got frustrated\u2026 I think it is time to write down what
+        I did to the plants for the day. I really don't want to come to this... but
+        it is for the best.\r\n\r"
       objectReference: {fileID: 0}
     - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_fontSize
@@ -10833,6 +10789,10 @@ PrefabInstance:
     - target: {fileID: 5138559853981002237, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_Color.r
       value: 0.40784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217768111441101746, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 6310709591177846631, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_Controller
@@ -11039,12 +10999,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 150919050}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3099789547043262283, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6510864584303481332, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 4913167341434302958, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -11886,6 +11840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 860213869}
     m_Modifications:
+    - target: {fileID: 46499590614588386, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 711101536794541623, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: correctPositions.Array.data[0]
       value: 
@@ -11920,25 +11878,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_text
-      value: 'Day 63
+      value: 'Day 93
 
 
-        We finally moved in to our new home. It was really
+        We finally moved into our new home. It was really
         stressful with my situation and all, but we managed to make it. And now it''s
-        time to organise things in our new home. It is so relaxing to me, to just
-        organise stuff. Everything has its place. Because otherwise how are you going
-        to find them in an emergency. So, today we decided to organise the kitchen
-        items. And of course I was the head of that. Serena was cleaning the cupboards
-        and I was placing the items. We finished unpacking, and then we had to make
-        a meal. So Serena started to asking me where I placed the big bowls, the
-        small pot and stuff. And I froze. I thought I placed them in a totally different
+        time to organise things. It is so relaxing to me, to just organise stuff.
+        Everything has its place. Because otherwise how are you going to find them
+        in an emergency. So, today we decided to organise the kitchen items. And
+        of course I was in charge of that. Serena was cleaning the cupboards and
+        I was storing the items. We finished unpacking, and then we had to make a
+        meal. So Serena started asking me where I placed the big bowls, the small
+        pot and so on.  And I froze. I thought I placed them in a totally different
         area. This is the first time I don''t know where the items I want are.. It
-        is chaos. The final drop, was when I stored the yogurt in the freezer...
-        Serena told me we can at least enjoy some frozen yogurt. '
+        is chaotic. The worst thing was when I stored the yoghurt in the freezer...At
+        least we enjoyed some nice frozen yoghurt with berries while watching TV
+        before going to bed.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_fontSize
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_margin.w
+      value: -1.2202053
       objectReference: {fileID: 0}
     - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_lineSpacing
-      value: -20
+      value: -26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_paragraphSpacing
@@ -12019,6 +11990,10 @@ PrefabInstance:
     - target: {fileID: 5067590773600956599, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: correctPositions.Array.data[1]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217768111441101746, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 5684914624559759886, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: correctPositions.Array.data[0]
@@ -12110,21 +12085,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_text
-      value: 'Day 63
-
-
-        We finally moved in to our new home. It was really
-        stressful with my situation and all, but we managed to make it. And now it''s
-        time to organise things in our new home. It is so relaxing to me, to just
-        organise stuff. Everything has its place. Because otherwise how are you going
-        to find them in an emergency. So, today we decided to organise the kitchen
-        items. And of course I was the head of that. Serena was cleaning the cupboards
-        and I was storing the items. We finished unpacking, and then we had to make
-        a meal. So Serena started to asking me where I placed the big bowls, the
-        small pot and stuff. And I froze. I thought I placed them in a totally different
-        area. This is the first time I don''t know where the items I want are.. It
-        is chaos. The final drop, was when I stored the yogurt in the freezer...
-        Serena told me we can at least enjoy some frozen yogurt. '
+      value: "Day 93\r\n\r\nWe finally moved into our new home. It was really stressful
+        with my situation and all, but we managed to make it. And now it's time to
+        organise things. It is so relaxing to me, to just organise stuff. Everything
+        has its place. Because otherwise how are you going to find them in an emergency.
+        So, today we decided to organise the kitchen items. And of course I was in
+        charge of that. Serena was cleaning the cupboards and I was storing the items.
+        We finished unpacking, and then we had to make a meal. So Serena started
+        asking me where I placed the big bowls, the small pot and so on.  And I froze.
+        I thought I placed them in a totally different area. This is the first time
+        I don't know where the items I want are.. It is chaotic. The worst thing
+        was when I stored the yoghurt in the freezer...At least we enjoyed some nice
+        frozen yoghurt with berries while watching TV for the night.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_fontSize
@@ -12132,7 +12104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_lineSpacing
-      value: -20
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_fontSizeBase
@@ -12142,6 +12114,10 @@ PrefabInstance:
       propertyPath: m_paragraphSpacing
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+      propertyPath: parentLinkedComponent
+      value: 
+      objectReference: {fileID: 2135589656}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4160571428066348879, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
@@ -12162,16 +12138,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2849558159645065254, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1699447788}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3099789547043262283, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6510864584303481332, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4913167341434302958, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
 --- !u!4 &2135589652 stripped
 Transform:
@@ -12199,164 +12166,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450bec7428ee3164baa94462bcdc205e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2142521701
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2142521702}
-  - component: {fileID: 2142521705}
-  - component: {fileID: 2142521704}
-  - component: {fileID: 2142521703}
-  - component: {fileID: 2142521706}
-  m_Layer: 5
-  m_Name: NoteButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &2142521702
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142521701}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1544174454}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 889, y: -478}
-  m_SizeDelta: {x: 346, y: 428}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2142521703
+--- !u!114 &2135589656 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+  m_PrefabInstance: {fileID: 2135589651}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142521701}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9339623, g: 0.9086039, b: 0.6740388, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2142521704}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 777354604}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2142521706}
-        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0.4
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!114 &2142521704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142521701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1440115381, guid: fbfae069ef6b23146b375aafae8ba88e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2142521705
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142521701}
-  m_CullTransparentMesh: 1
---- !u!114 &2142521706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142521701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa766297bcb142c40811b1d736cf7503, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 31cc6d82f372c234a901965e1a6cb31b, type: 3}
 --- !u!1001 &54977721445171682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12380,18 +12200,6 @@ PrefabInstance:
     - target: {fileID: 1360365348647437873, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      propertyPath: m_text
-      value: "Day 17\n\nToday I decided to bake lava cakes. I baked them multiple
-        times, Everybody loves them. The secret is using a nice quality of chocolate.
-        I like serving them with a scoup of vanilla ice cream. It is so good! \n\nThis
-        time around though I got confused..? I thought I have already mixed the first
-        mixture with the second one, but alas I haven't. I poured the first mixture
-        into the containers and baked them. Well, basically they came out as lava.
-        Don't get me wrong, they were tasty, but I missed the cake part. Serena told
-        me not to let this thing to affect me. It was just confusing. It was like
-        I lost the track of time? Hopefully tomorrow my day will be better."
       objectReference: {fileID: 0}
     - target: {fileID: 3099789547043262283, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_IsActive
@@ -12491,20 +12299,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       propertyPath: m_text
-      value: "Day 1\n\nToday I decided to bake lava cakes. I baked them multiple
+      value: "Day 17\n\nToday I decided to bake lava cakes. I baked them multiple
         times, Everybody loves them. The secret is using a nice quality of chocolate.
         I like serving them with a scoup of vanilla ice cream. It is so good! \n\nThis
         time around though I got confused..? I thought I have already mixed the first
         mixture with the second one, but alas I haven't. I poured the first mixture
         into the containers and baked them. Well, basically they came out as lava.
         Don't get me wrong, they were tasty, but I missed the cake part. Serena told
-        me not to let this thing to affect me. It was confusing. It was like I lost
-        the track of time? Hopefully tomorrow my day will be better."
+        me not to let this thing to affect me. It was just confusing. It was like
+        I lost the track of time? Hopefully tomorrow my day will be better."
       objectReference: {fileID: 0}
     - target: {fileID: 8841715526909269586, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      propertyPath: m_margin.z
-      value: 10.570482
-      objectReference: {fileID: 0}
+      propertyPath: parentLinkedComponent
+      value: 
+      objectReference: {fileID: 54977721445171683}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8702088535634688980, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
@@ -12552,13 +12360,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6320745437008545016, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 731439515}
-    - targetCorrespondingSourceObject: {fileID: 3099789547043262283, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6510864584303481332, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+--- !u!114 &54977721445171683 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2608420943374833592, guid: bca6e03f6c842ef429af9ef5758275bc, type: 3}
+  m_PrefabInstance: {fileID: 54977721445171682}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &348728601612907377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12788,6 +12601,10 @@ PrefabInstance:
     - target: {fileID: 8361182164484666170, guid: 2958e18cc4483b34f977d2fb15ab7b9a, type: 3}
       propertyPath: m_Name
       value: Page-Grid1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361182164484666170, guid: 2958e18cc4483b34f977d2fb15ab7b9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13265,85 +13082,103 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 066679e4f1cfdc34eb50d308f417b676, type: 3}
---- !u!1001 &7615002711198168578
+--- !u!1001 &4751780080810876188
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1984325390}
+    m_TransformParent: {fileID: 1544174454}
     m_Modifications:
-    - target: {fileID: 2902897001737620613, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 3147368358140191046, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_Name
       value: Note
       objectReference: {fileID: 0}
-    - target: {fileID: 2902897001737620613, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4981598831881532447, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5502332753674845934, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-      propertyPath: m_text
-      value: "Keep reading this and eveything will be fine.\n\n     \tDr Ninemia\n\t\tNevihta"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.45
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.09798653
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7408937075585881530, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    - target: {fileID: 7551327966152912510, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936468726126829390, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2902897001737620613, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 777354606}
-    - targetCorrespondingSourceObject: {fileID: 2902897001737620613, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 777354610}
-  m_SourcePrefab: {fileID: 100100000, guid: 946feb3b7287efb4284bcd600f5ccf0d, type: 3}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b57fd286f0c6f0c489d3b4af9e21e2cc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

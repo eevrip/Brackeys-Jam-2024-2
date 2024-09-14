@@ -22,11 +22,13 @@ public class Page : MonoBehaviour
     [SerializeField] private AudioClip accomplishClip;
     [SerializeField] List<GameObject> externalObjects;
     private SFXManager sfxManager;
+    [SerializeField] private bool isLastPage;
     void Start()
     {
         pageNumber = transform.GetSiblingIndex();
         pageManager = PageManager.instance;
         sfxManager = SFXManager.instance;
+        
 
     }
 
@@ -34,6 +36,7 @@ public class Page : MonoBehaviour
     {
         if (isSolved || canTurnNextPage)
         {
+            if (isLastPage) { AmbientManager.instance.playThunder(); }
             pageManager.ActivatePage(pageNumber + 1);
             //pageManager.DeactivatePage(pageNumber);
             Deactivate();
@@ -123,7 +126,7 @@ public class Page : MonoBehaviour
 
         SetActivityOfExternalItems(false);
         answer.SetActive(true);
-        sfxManager.PlaySoundClipLowVol(accomplishClip, 0.09f);
+       // sfxManager.PlaySoundClipLowVol(accomplishClip, 0.09f);
         StartCoroutine(LoadJournal(3f));
 
 
@@ -133,6 +136,8 @@ public class Page : MonoBehaviour
         StartCoroutine(FadeInOut(fuzziness, false, 2f));
         yield return new WaitForSeconds(4f);
         //MusicManager.instance.StopSoundClip();
+        MusicManager.instance.LowerSoundClipAt(10f, 0.1f);
+       
         fuzziness.SetActive(false);
         StartCoroutine(FadeInOut(transitioning, true, 2f));
         yield return new WaitForSeconds(duration);

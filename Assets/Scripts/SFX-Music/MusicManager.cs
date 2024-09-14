@@ -6,6 +6,7 @@ public class MusicManager : MonoBehaviour
 {
     public static MusicManager instance;
     private AudioSource audioSource;
+    public AudioSource AudioSrc => audioSource;
     void Awake()
     {
 
@@ -29,6 +30,11 @@ public class MusicManager : MonoBehaviour
     {
 
         StartCoroutine(StartFadeSound(10f, 0f));
+    }
+    public void LowerSoundClipAt(float duration, float difference)
+    {
+        float targetVolume = audioSource.volume - difference;
+        StartCoroutine(StartFadeSound(duration, targetVolume));
     }
     public IEnumerator StartFadeSound(float duration, float targetVolume)
     {

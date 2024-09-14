@@ -332,6 +332,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 851533773400529670}
     m_Modifications:
+    - target: {fileID: 496109142691494080, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 523259051839110019, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_FillAmount
       value: 1
@@ -366,8 +370,12 @@ PrefabInstance:
       objectReference: {fileID: 2096471974, guid: 516e3d12605b18941bb6d112c9bdbbfd, type: 3}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1101338379098036114}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -377,8 +385,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetBackgroundVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetBackgroundVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -525,6 +541,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 851533773400529670}
     m_Modifications:
+    - target: {fileID: 496109142691494080, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 523259051839110019, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_FillAmount
       value: 1
@@ -559,8 +579,12 @@ PrefabInstance:
       objectReference: {fileID: 1046585541, guid: cd0262d138d11654ab81e65bee42a1b8, type: 3}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1101338379098036114}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -570,8 +594,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSFXVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetSFXVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -718,6 +750,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 851533773400529670}
     m_Modifications:
+    - target: {fileID: 496109142691494080, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 523259051839110019, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_FillAmount
       value: 1
@@ -760,8 +796,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1101338379098036114}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -771,8 +811,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMusicVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetMusicVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -919,6 +967,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 851533773400529670}
     m_Modifications:
+    - target: {fileID: 496109142691494080, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 523259051839110019, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_FillAmount
       value: 1
@@ -949,8 +1001,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1101338379098036114}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -960,8 +1016,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMasterVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetMasterVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5218474106276552578, guid: 5ce021834182b7d4a99b98c5b72b8e85, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
