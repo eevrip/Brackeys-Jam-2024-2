@@ -36,7 +36,9 @@ public class Page : MonoBehaviour
     {
         if (isSolved || canTurnNextPage)
         {
-            if (isLastPage) { AmbientManager.instance.playThunder(); }
+            if (isLastPage) {
+                if(AmbientManager.instance)
+                    AmbientManager.instance.playThunder(); }
             pageManager.ActivatePage(pageNumber + 1);
             //pageManager.DeactivatePage(pageNumber);
             Deactivate();
@@ -136,7 +138,8 @@ public class Page : MonoBehaviour
         StartCoroutine(FadeInOut(fuzziness, false, 2f));
         yield return new WaitForSeconds(4f);
         //MusicManager.instance.StopSoundClip();
-        MusicManager.instance.LowerSoundClipAt(10f, 0.1f);
+        if(MusicManager.instance)
+            MusicManager.instance.LowerSoundClipAt(10f, 0.1f);
        
         fuzziness.SetActive(false);
         StartCoroutine(FadeInOut(transitioning, true, 2f));

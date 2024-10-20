@@ -886,6 +886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1876698156063760766, guid: 0fb42b14fdf19be4e8661b499fd56e38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8767941825462919634, guid: 0fb42b14fdf19be4e8661b499fd56e38, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.6282153
